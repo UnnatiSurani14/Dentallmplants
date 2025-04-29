@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-white: #ffffff;
+  --color-red: #ff0000;
+  --color-green: #52c600;
+  --color-gray: #8e8e8e;
+  --color-blue: #5e5eee;
+  --color-blue-100: #0000be;
+  --color-blue-200: #124767;
+  --color-blue-300: #3aa2b2;
+
+  --font-roboto: "Roboto", sans-serif;
+  --font-Lato: "Lato", sans-serif;
+  --font-Plus: "Plus Jakarta Sans", sans-serif;
+
+  --text-18: 18px;
+  --text-20: 20px;
+  --text-25: 25px;
+}
+
+.header {
+  @apply h-[162px] border;
+}
+.header .header-top {
+  @apply xl:h-[52px] border bg-blue text-white flex flex-wrap items-center justify-between p-2 xl:px-20 font-roboto;
+}
+.header .header-top ul li a {
+  @apply xl:text-18;
+}
+.header .header-bottom {
+  @apply flex justify-evenly items-center h-[110px];
+}
+.header .header-bottom .logo {
+  @apply text-blue-200 font-Lato font-bold text-25;
+}
+.header .header-bottom .navbar ul li a {
+  @apply font-semibold text-18 hover:text-blue;
+}
+.header .header-bottom .contact .icon {
+  @apply bg-blue h-[35px] w-[35px] rounded-full flex justify-center items-center;
+}
+.header .header-bottom .contact .btn {
+  @apply flex bg-blue py-3 text-white px-10 rounded-[20px] gap-2 font-bold font-Plus;
+}
+.header .header-bottom .contact .num {
+  @apply absolute -top-1 right-0 h-[13px] w-[13px] bg-red text-white flex justify-center items-center rounded-full text-[10px];
+}
+
+.searchbar {
+  @apply border m-auto rounded-b-2xl w-[935px] font-roboto bg-white sticky hidden;
+}
+.searchbar .red,
+.green {
+  @apply h-[10px] w-[10px] bg-red rounded-full;
+}
+.searchbar .green {
+  @apply bg-green;
+}
+.h3 {
+  @apply text-gray;
+}
+.searchbar .search-item {
+  @apply flex justify-between items-center p-5;
+}
+
+.product-menu {
+  @apply flex justify-center items-center p-10 w-full bg-white;
+}
+.product-menu .menu-item .items {
+  @apply flex items-center justify-between p-4 rounded-[10px] border text-[20px] font-roboto w-[254px] h-[64px] mt-4 relative hover:bg-blue-300 hover:text-white;
+}
+.product-menu .menu-item .items .fram-white {
+  @apply absolute right-4 z-0;
+}
+.product-menu .menu-item .items .fram-black {
+  @apply z-10;
+}
+.product-menu .menu-item .items:hover .fram-black {
+  display: none;
+}
+.multi-unit {
+  @apply flex items-center p-4 shadow-xl;
+}

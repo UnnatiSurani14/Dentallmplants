@@ -1,0 +1,32 @@
+{
+  "name": "dentallmplants",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tailwindcss -i ./assets/css/style.css -o ./dist/style.css --watch",
+    "prepare": "husky"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "eslint": "^9.25.1",
+    "globals": "^16.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.1",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,html,css}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  }
+}
