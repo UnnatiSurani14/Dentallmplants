@@ -5,22 +5,67 @@
   --color-red: #ff0000;
   --color-green: #52c600;
   --color-gray: #8e8e8e;
+  --color-black-100: #191c1f;
   --color-blue: #5e5eee;
   --color-blue-100: #0000be;
   --color-blue-200: #124767;
   --color-blue-300: #3aa2b2;
+  --color-blue-400: #2da5f3;
+  --color-blue-500: #5e5eee;
+  --color-blue-600: #67cbd0;
+  --color-black: #000000;
 
   --font-roboto: "Roboto", sans-serif;
   --font-Lato: "Lato", sans-serif;
   --font-Plus: "Plus Jakarta Sans", sans-serif;
 
+  --text-16: 16px;
   --text-18: 18px;
   --text-20: 20px;
+  --text-22: 22px;
   --text-25: 25px;
+  --text-30: 30px;
+  --text-40: 40px;
+  --text-54: 54px;
+}
+
+.swiper-pagination {
+  @apply relative bottom-0 left-0 right-0 top-0;
+}
+.swiper-pagination::after {
+  content: "";
+  display: none !important;
+}
+.swiper-pagination {
+  @apply absolute mb-16;
+}
+.swiper-pagination-bullet {
+  @apply bg-white border-[6px] border-white;
+}
+.swiper-pagination-bullet-active {
+  @apply border-[6px] border-white;
+}
+.contact {
+  @apply font-roboto text-16 font-normal;
+}
+.contact2 {
+  @apply font-roboto text-18 font-normal;
+}
+.contact3 {
+  @apply font-Plus text-16 text-[#555574];
+}
+.title {
+  @apply text-40 font-bold font-Plus my-2;
+}
+.title1 {
+  @apply text-[54.87px] text-center;
+}
+.title2 {
+  @apply font-Plus text-20 font-semibold text-[#0B0B38];
 }
 
 .header {
-  @apply h-[162px] border;
+  @apply xl:h-[162px];
 }
 .header .header-top {
   @apply xl:h-[52px] border bg-blue text-white flex flex-wrap items-center justify-between p-2 xl:px-20 font-roboto;
@@ -29,10 +74,13 @@
   @apply xl:text-18;
 }
 .header .header-bottom {
-  @apply flex justify-evenly items-center h-[110px];
+  @apply flex flex-wrap justify-evenly items-center xl:h-[110px];
 }
 .header .header-bottom .logo {
   @apply text-blue-200 font-Lato font-bold text-25;
+}
+.header .header-bottom .navbar {
+  @apply w-full xl:w-auto p-3 hidden xl:block;
 }
 .header .header-bottom .navbar ul li a {
   @apply font-semibold text-18 hover:text-blue;
@@ -40,15 +88,18 @@
 .header .header-bottom .contact .icon {
   @apply bg-blue h-[35px] w-[35px] rounded-full flex justify-center items-center;
 }
-.header .header-bottom .contact .btn {
+.btn {
   @apply flex bg-blue py-3 text-white px-10 rounded-[20px] gap-2 font-bold font-Plus;
 }
 .header .header-bottom .contact .num {
   @apply absolute -top-1 right-0 h-[13px] w-[13px] bg-red text-white flex justify-center items-center rounded-full text-[10px];
 }
 
+.searchbar-weapper {
+  @apply fixed z-20 w-full;
+}
 .searchbar {
-  @apply border m-auto rounded-b-2xl w-[935px] font-roboto bg-white sticky hidden;
+  @apply border m-auto rounded-b-2xl w-[935px] font-roboto bg-white hidden;
 }
 .searchbar .red,
 .green {
@@ -65,10 +116,10 @@
 }
 
 .product-menu {
-  @apply flex justify-center items-center p-10 w-full bg-white;
+  @apply fixed z-20 h-[603px] flex flex-wrap flex-row justify-center items-center p-2 xl:p-10 w-full bg-white;
 }
 .product-menu .menu-item .items {
-  @apply flex items-center justify-between p-4 rounded-[10px] border text-[20px] font-roboto w-[254px] h-[64px] mt-4 relative hover:bg-blue-300 hover:text-white;
+  @apply flex items-center justify-between p-4 rounded-[10px] border text-[20px] font-roboto w-[254px] h-[64px] relative hover:bg-blue-300 hover:text-white;
 }
 .product-menu .menu-item .items .fram-white {
   @apply absolute right-4 z-0;
@@ -80,5 +131,114 @@
   display: none;
 }
 .multi-unit {
-  @apply flex items-center p-4 shadow-xl;
+  @apply flex items-center p-4 shadow-md;
+}
+.product-menu .product-title {
+  @apply font-Plus text-[19.14px] font-medium text-black-100;
+}
+.product-menu .product-des {
+  @apply font-roboto text-blue-400 text-[18.07px] font-semibold;
+}
+.product-menu .menu-item-3 {
+  @apply w-[384px] h-[503px] bg-blue-600 flex justify-center items-center flex-col rounded-[10px];
+}
+.shop-btn {
+  @apply bg-blue-500 text-white flex justify-center items-center gap-2 py-4 px-20 text-[17.68px] font-bold font-Plus my-4 rounded-[22px];
+}
+.h2 {
+  @apply font-Plus text-white font-semibold text-[30.94px];
+}
+
+.banner-slide {
+  @apply h-[850px] border;
+}
+.banner-slide .slide-1 {
+  @apply bg-linear-to-r from-[#2C2C66] to-[#0B0B38] flex justify-center items-center;
+}
+.banner-slide .slide-1 .slide1-item-1 {
+  @apply h-[540px] w-[793px] text-white;
+}
+h1 {
+  @apply text-54 font-Plus font-bold;
+}
+.banner-slide .slide-1 .slide1-item-2 {
+  @apply h-[604.8px] w-[620px] relative;
+}
+.banner-slide .slide-1 .slide1-item-2 .review {
+  @apply absolute bottom-36 bg-white rounded-[15px] p-5 h-[143.79px] w-[275px];
+}
+.shop-btn-2 {
+  @apply bg-blue-500 w-auto text-white py-3 flex justify-center items-center gap-2 text-[17.68px] font-bold font-Plus my-4 rounded-[22px];
+}
+.banner-slide .slide-2 {
+  @apply bg-[#050607] flex flex-col items-center text-white relative;
+}
+.banner-slide .slide-2 .slide2-slider {
+  @apply h-[405px] w-[1190px] flex items-center;
+}
+.banner-slide .slide-2 .slide2-slider .slide {
+  @apply h-full flex justify-center items-center;
+}
+.banner-slide .slide-2 .slide2-slider .slide img {
+  @apply drop-shadow-xl;
+}
+.banner-slide .slide-2 .color {
+  @apply absolute -bottom-[50%] h-[900px] w-full bg-[radial-gradient(at_50%_75%,_#5E5EEE_20%,_#2E9AFF_20%,_#050607_60%)] rounded-t-full opacity-50;
+}
+.banner-slide .slide-3 {
+  @apply bg-[#1D1D1D];
+}
+.banner-slide .slide-3 .slide3-item {
+  @apply w-[1156px] h-full text-white bg-gradient-to-r from-[#1D1D1D] via-[#151515] to-[#15151529] absolute left-0 flex items-center z-30;
+}
+.banner-slide .slide-3 .slide3-item .slide3-item-1 {
+  @apply w-[700px] ms-[10%];
+}
+.banner-slide .slide-3 .swiper-slider-3 {
+  @apply w-[1000px] h-[694px] absolute right-0 top-20 z-10;
+}
+.banner-slide .slide-3 .swiper-slider-3 .image {
+  @apply bg-white p-10 rounded-[30px];
+}
+
+.track {
+  @apply bg-white m-auto w-[1183.33px] rounded-t-[40px] flex items-center justify-evenly p-10  absolute -mt-16 left-90 z-30;
+}
+.track .icon {
+  @apply bg-blue-500 h-[70px] w-[70px] rounded-[15px] flex justify-center items-center mx-3;
+}
+
+.contacts {
+  @apply container text-white bg-blue-500 flex justify-evenly items-center rounded-[20px] border-8 border-white mt-40;
+}
+.contect-text {
+  @apply text-22 font-roboto my-3;
+}
+.contacts form {
+  @apply flex gap-4 p-4;
+}
+
+.footer {
+  @apply bg-black text-white h-[573px] relative;
+}
+.footer .footer-menu {
+  @apply container absolute bottom-0 xl:left-40 p-5 text-white;
+}
+.footer-title {
+  @apply font-Plus text-30 font-bold;
+}
+.footer-title1 {
+  @apply text-22 font-Plus font-semibold;
+}
+.footer .footer-menu ul li {
+  @apply mt-5;
+}
+.footer .socil-icon {
+  @apply flex items-center gap-2 my-2;
+}
+.footer .socil-icon .solil-icon-item {
+  @apply bg-white h-[40px] w-[40px] rounded-full flex justify-center items-center;
+}
+.footer .footer-menu .highlite {
+  @apply border-t border-[#C6C6C6] pt-5 flex justify-center items-center font-roboto font-medium text-20;
 }
