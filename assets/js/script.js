@@ -64,4 +64,50 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+
+  const shopBySystemSwiper = new Swiper('.shop-by-system-swiper', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    spaceBetween: 48,
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      660: { slidesPerView: 2.5 },
+      1024: { slidesPerView: 3 },
+      1280: { slidesPerView: 3 },
+    },
+  })
+
+  const ShopByCaseSwiper = new Swiper('.Shop-By-Case-swiper', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    spaceBetween: 18,
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      660: { slidesPerView: 2.5 },
+      1024: { slidesPerView: 3 },
+      1280: { slidesPerView: 4 },
+    },
+  })
+
+  const TestimonialsSwiper = new Swiper('.Testimonials-swiper', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    spaceBetween: 30,
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      660: { slidesPerView: 2.5 },
+      1024: { slidesPerView: 3 },
+      1280: { slidesPerView: 3 },
+    },
+  })
+
 });

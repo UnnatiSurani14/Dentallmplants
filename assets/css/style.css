@@ -4,37 +4,59 @@
   --color-white: #ffffff;
   --color-red: #ff0000;
   --color-green: #52c600;
-  --color-gray: #8e8e8e;
+  --color-lightgreen:#4E9B18;
+  --color-gray: #8E8E8E;
   --color-black-100: #191c1f;
   --color-blue: #5e5eee;
   --color-blue-100: #0000be;
   --color-blue-200: #124767;
   --color-blue-300: #3aa2b2;
   --color-blue-400: #2da5f3;
-  --color-blue-500: #5e5eee;
+  --color-blue-500: #5E5EEE;
   --color-blue-600: #67cbd0;
+  --color-blue-700:#4b4bbe;
+  --color-blue-800:#4242FF;
+  --color-blue-900:#102693;
+  --color-lightblue:##E9E9FF;
   --color-black: #000000;
 
   --font-roboto: "Roboto", sans-serif;
   --font-Lato: "Lato", sans-serif;
   --font-Plus: "Plus Jakarta Sans", sans-serif;
 
+  --text-14: 14px;
   --text-16: 16px;
+  --text-17.68:17.68px;
   --text-18: 18px;
+  --text-18.07:18.07px;
   --text-20: 20px;
   --text-22: 22px;
   --text-25: 25px;
+  --text-26: 26px;
   --text-30: 30px;
+  --text-30.94:30.94px;
+  --text-35: 35px;
   --text-40: 40px;
   --text-54: 54px;
+
+  --radius-10:10px;
+  --radius-15:15px;
+  --radius-20:20px;
+  --radius-22:22px;
+  --radius-30:30px;
+  --radius-40:40px;
 }
+
+
 
 .swiper-pagination {
   @apply relative bottom-0 left-0 right-0 top-0;
 }
-.swiper-pagination::after {
-  content: "";
-  display: none !important;
+/* .swiper-button-prev,.swiper-button-next{
+  @apply !relative !bottom-0 !left-0 !right-0 !top-0;
+} */
+.swiper-button-prev,.swiper-button-next,.swiper-pagination::after {
+  @apply !hidden;
 }
 .swiper-pagination {
   @apply absolute mb-16;
@@ -44,6 +66,15 @@
 }
 .swiper-pagination-bullet-active {
   @apply border-[6px] border-white;
+}
+.swiper-button-prev::before{
+  @apply h-[40px] w-[40px] rounded-full bg-lightblue;
+}
+.swiper-button-next::before{
+  @apply h-[40px] w-[40px] rounded-full bg-blue-500;
+}
+.btn {
+  @apply flex items-center bg-blue py-3 text-white px-8 rounded-20 gap-2 font-bold font-Plus text-16;
 }
 .contact {
   @apply font-roboto text-16 font-normal;
@@ -57,12 +88,22 @@
 .title {
   @apply text-40 font-bold font-Plus my-2;
 }
+.subtitle{
+  @apply font-Plus text-18 text-blue-500 font-bold flex items-center gap-2 mt-3;
+}
 .title1 {
   @apply text-[54.87px] text-center;
 }
 .title2 {
   @apply font-Plus text-20 font-semibold text-[#0B0B38];
 }
+.black-title {
+  @apply text-22 font-Plus font-semibold;
+}
+.like{
+  @apply py-3 px-[13px] rounded-20 bg-[#cdcdfa];
+}
+
 
 .header {
   @apply xl:h-[162px];
@@ -87,9 +128,6 @@
 }
 .header .header-bottom .contact .icon {
   @apply bg-blue h-[35px] w-[35px] rounded-full flex justify-center items-center;
-}
-.btn {
-  @apply flex bg-blue py-3 text-white px-10 rounded-[20px] gap-2 font-bold font-Plus;
 }
 .header .header-bottom .contact .num {
   @apply absolute -top-1 right-0 h-[13px] w-[13px] bg-red text-white flex justify-center items-center rounded-full text-[10px];
@@ -119,7 +157,7 @@
   @apply fixed z-20 h-[603px] flex flex-wrap flex-row justify-center items-center p-2 xl:p-10 w-full bg-white;
 }
 .product-menu .menu-item .items {
-  @apply flex items-center justify-between p-4 rounded-[10px] border text-[20px] font-roboto w-[254px] h-[64px] relative hover:bg-blue-300 hover:text-white;
+  @apply flex items-center justify-between p-4 rounded-10 border text-20 font-roboto w-[254px] h-[64px] relative hover:bg-blue-300 hover:text-white;
 }
 .product-menu .menu-item .items .fram-white {
   @apply absolute right-4 z-0;
@@ -137,16 +175,16 @@
   @apply font-Plus text-[19.14px] font-medium text-black-100;
 }
 .product-menu .product-des {
-  @apply font-roboto text-blue-400 text-[18.07px] font-semibold;
+  @apply font-roboto text-blue-400 text-18.07 font-semibold;
 }
 .product-menu .menu-item-3 {
-  @apply w-[384px] h-[503px] bg-blue-600 flex justify-center items-center flex-col rounded-[10px];
+  @apply w-[384px] h-[503px] bg-blue-600 flex justify-center items-center flex-col rounded-10;
 }
 .shop-btn {
-  @apply bg-blue-500 text-white flex justify-center items-center gap-2 py-4 px-20 text-[17.68px] font-bold font-Plus my-4 rounded-[22px];
+  @apply bg-blue-500 text-white flex justify-center items-center gap-2 py-4 px-20 text-17.68 font-bold font-Plus my-4 rounded-22;
 }
 .h2 {
-  @apply font-Plus text-white font-semibold text-[30.94px];
+  @apply font-Plus text-white font-semibold text-30.94;
 }
 
 .banner-slide {
@@ -165,10 +203,10 @@ h1 {
   @apply h-[604.8px] w-[620px] relative;
 }
 .banner-slide .slide-1 .slide1-item-2 .review {
-  @apply absolute bottom-36 bg-white rounded-[15px] p-5 h-[143.79px] w-[275px];
+  @apply absolute bottom-36 bg-white rounded-15 p-5 h-[143.79px] w-[275px];
 }
 .shop-btn-2 {
-  @apply bg-blue-500 w-auto text-white py-3 flex justify-center items-center gap-2 text-[17.68px] font-bold font-Plus my-4 rounded-[22px];
+  @apply bg-blue-500 w-auto text-white py-3 flex justify-center items-center gap-2 text-17.68 font-bold font-Plus my-4 rounded-[22px];
 }
 .banner-slide .slide-2 {
   @apply bg-[#050607] flex flex-col items-center text-white relative;
@@ -198,24 +236,167 @@ h1 {
   @apply w-[1000px] h-[694px] absolute right-0 top-20 z-10;
 }
 .banner-slide .slide-3 .swiper-slider-3 .image {
-  @apply bg-white p-10 rounded-[30px];
+  @apply bg-white p-10 rounded-30;
 }
 
 .track {
-  @apply bg-white m-auto w-[1183.33px] rounded-t-[40px] flex items-center justify-evenly p-10  absolute -mt-16 left-90 z-30;
+  @apply bg-white m-auto w-[1183.33px] rounded-t-40 flex items-center justify-evenly p-10  absolute -mt-16 left-90 z-30;
 }
 .track .icon {
-  @apply bg-blue-500 h-[70px] w-[70px] rounded-[15px] flex justify-center items-center mx-3;
+  @apply bg-blue-500 h-[70px] w-[70px] rounded-15 flex justify-center items-center mx-3;
+}
+
+.shop-by-system{
+  @apply container m-auto mt-40 p-10;
+}
+.shop-by-system .shop-by-system-menu,.Shop-By-Case-menu{
+  @apply flex items-center justify-between my-5;
+}
+.shop-by-system-swiper .swiper-slide,.Shop-By-Case-swiper .swiper-slide{
+  @apply bg-white rounded-40 overflow-hidden;
+}
+.tag{
+  @apply bg-blue-500 text-white rounded-10 py-[9px] px-10 font-roboto font-semibold text-[18.75px];
+}
+.shop-by-system-swiper .img{
+  @apply h-[264px] flex items-center justify-center
+}
+
+.Shop-By-Case{
+  @apply container m-auto mb-10 p-10;
+}
+.Shop-By-Case .img{
+  @apply flex justify-center items-center bg-white border-[3px] border-blue-500 rounded-40 h-[241px];
+}
+.case{
+  @apply bg-white h-[35px] w-[35px] rounded-full flex justify-center items-center;
+}
+.case-btn{
+  @apply flex items-center gap-2 bg-blue-500 text-22 font-roboto font-bold text-white py-3 px-5 rounded-10;
+}
+
+.works{
+  @apply relative flex flex-col items-center p-2 mb-30;
+}
+.works .works-menu{
+  @apply grid grid-cols-5 gap-4 w-[60%] mt-5;
+}
+.works .works-menu .work-item{
+  @apply flex flex-col items-center;
+}
+.work-content{
+  @apply text-blue-500 font-medium text-22 font-roboto;
+}
+.works .icon{
+  @apply bg-blue-500 flex justify-center items-center h-[60px] w-[60px] rounded-full my-3;
+}
+
+.program{
+  @apply relative h-auto xl:h-[379px] flex flex-col items-center p-2 mb-30;
+}
+.program-title{
+  @apply font-Lato font-bold text-20;
+}
+.program .program-menu1{
+  @apply container m-auto p-5 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8;
+}
+.program .program-menu1 li{
+  @apply font-medium mt-2;
+}
+.program .program-menu1 .program-item{
+  @apply p-6 pe-10;
+}
+.program .green-text{
+  @apply text-lightgreen font-Plus font-bold text-22;
+}
+.program .text{
+  @apply text-gray text-18 font-Plus font-medium;
+}
+.program .content-program{
+  @apply text-14 text-gray font-roboto font-medium mt-3;
+}
+.program .program-menu1 .items{
+  @apply border-b border-gray flex items-center justify-between pb-4;
+}
+.program-btn{
+  @apply bg-blue-800 rounded-20 text-white p-1 font-roboto font-semibold px-2; 
+}
+
+.serves{
+  @apply flex flex-col items-center;
+}
+.serves .serves-menu1{
+  @apply flex flex-wrap justify-center items-center gap-6 my-10;
+}
+.serves .serves-menu1 .serves-item{
+  @apply border-3 border-blue-500 rounded-40 w-[365px] overflow-hidden;
+}
+.serves .serves-menu1 .serves-item .items{
+  @apply bg-blue-500 flex items-center justify-center h-[100px] font-Plus font-semibold text-26 text-white;
+}
+
+.Professionals{
+  @apply relative flex flex-col items-center justify-center h-[519px];
+}
+.Professionals-item{
+  @apply  container overflow-auto flex items-center gap-6 mt-5;
+}
+.Professionals-item .items{
+  @apply flex flex-col items-center w-[204px] border border-[#C6C6C6] rounded-20 p-3;
+}
+.Professionals-title{
+  @apply text-35 font-Plus font-semibold mb-2;
+}
+.Professionals-content{
+  @apply text-blue-900 font-medium text-22 font-roboto;
+}
+
+.about{
+  @apply flex items-center justify-center gap-[99px] h-[709px] mb-30;
+}
+.blue-text{
+  @apply text-18 font-Plus font-semibold text-blue-500;
+}
+.about .text{
+  @apply font-roboto text-[#696969];
+}
+
+.Testimonials{
+  @apply container m-auto mb-56 px-16;
+}
+.Testimonials-swiper .swiper-slide{
+  @apply rounded-40 border-3 border-blue-500 p-5 relative bg-white;
+}
+.Testimonials-contant{
+  @apply font-roboto font-bold text-22  text-gray pe-12;
+}
+.Testimonials .text{
+  @apply text-18 font-Plus font-medium text-black;
+}
+.Testimonials .mark{
+  @apply absolute right-1 -top-6 bg-blue-500 flex items-center justify-center h-[54px] w-[54px] rounded-full;
 }
 
 .contacts {
-  @apply container text-white bg-blue-500 flex justify-evenly items-center rounded-[20px] border-8 border-white mt-40;
+  @apply xl:absolute left-44 z-40 container text-white bg-blue-500 flex flex-wrap justify-evenly items-center rounded-20 border-8 border-white xl:-mt-44 py-12;
 }
-.contect-text {
+.contact-text {
   @apply text-22 font-roboto my-3;
 }
 .contacts form {
   @apply flex gap-4 p-4;
+}
+.contacts form input::placeholder{
+  @apply text-[#C6C6C6] font-roboto text-18;
+}
+.subscrine-btn{
+  @apply  bg-white rounded-20 text-blue-500 font-Plus font-bold w-[176px] h-[50px];
+}
+.contacts .contacts-item1{
+  @apply w-[489px] bg-blue-700 flex flex-col items-center p-5 rounded-md;
+}
+.chat-btn{
+  @apply bg-white text-blue-500 py-3 px-6 font-Plus font-bold text-18 flex items-center gap-2 rounded-20 my-3;
 }
 
 .footer {
@@ -224,11 +405,8 @@ h1 {
 .footer .footer-menu {
   @apply container absolute bottom-0 xl:left-40 p-5 text-white;
 }
-.footer-title {
+.footer-title,.contects-title {
   @apply font-Plus text-30 font-bold;
-}
-.footer-title1 {
-  @apply text-22 font-Plus font-semibold;
 }
 .footer .footer-menu ul li {
   @apply mt-5;
