@@ -28,6 +28,30 @@
 </head>
 
 <body>
+  <!-- popup -->
+   <section class="popup-wrapper" id="popup">
+    <div class="popup relative hidden" id="popup">
+    <img src="../assets/images/close.png" alt="close" width="46" height="46" class="absolute top-4 right-4" id="popupClose">
+      <img src="../assets/images/gift.png" alt="gift" width="84.44" height="84.44">
+      <div class="title">
+        <h2 class="text-56">Get $50 On Us!</h2>
+      </div>
+      <div class="contact3 text-center">
+        <p class="text-[28.25px]">Sign up now and receive $50 in store credit for your first order.</p>
+      </div>
+      <div class="popupbutton">
+        <a href="" class="popup-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 16 16" fill="none">
+            <path d="M8 8C6.9 8 5.95833 7.60833 5.175 6.825C4.39167 6.04167 4 5.1 4 4C4 2.9 4.39167 1.95833 5.175 1.175C5.95833 0.391667 6.9 0 8 0C9.1 0 10.0417 0.391667 10.825 1.175C11.6083 1.95833 12 2.9 12 4C12 5.1 11.6083 6.04167 10.825 6.825C10.0417 7.60833 9.1 8 8 8ZM0 16V13.2C0 12.6333 0.145833 12.1125 0.4375 11.6375C0.729167 11.1625 1.11667 10.8 1.6 10.55C2.63333 10.0333 3.68333 9.64583 4.75 9.3875C5.81667 9.12917 6.9 9 8 9C9.1 9 10.1833 9.12917 11.25 9.3875C12.3167 9.64583 13.3667 10.0333 14.4 10.55C14.8833 10.8 15.2708 11.1625 15.5625 11.6375C15.8542 12.1125 16 12.6333 16 13.2V16H0ZM2 14H14V13.2C14 13.0167 13.9542 12.85 13.8625 12.7C13.7708 12.55 13.65 12.4333 13.5 12.35C12.6 11.9 11.6917 11.5625 10.775 11.3375C9.85833 11.1125 8.93333 11 8 11C7.06667 11 6.14167 11.1125 5.225 11.3375C4.30833 11.5625 3.4 11.9 2.5 12.35C2.35 12.4333 2.22917 12.55 2.1375 12.7C2.04583 12.85 2 13.0167 2 13.2V14ZM8 6C8.55 6 9.02083 5.80417 9.4125 5.4125C9.80417 5.02083 10 4.55 10 4C10 3.45 9.80417 2.97917 9.4125 2.5875C9.02083 2.19583 8.55 2 8 2C7.45 2 6.97917 2.19583 6.5875 2.5875C6.19583 2.97917 6 3.45 6 4C6 4.55 6.19583 5.02083 6.5875 5.4125C6.97917 5.80417 7.45 6 8 6Z" fill="white"/>
+            </svg>
+          Create My Account
+        </a>
+      </div>
+    </div>
+   </section>
+   <!-- popup end -->
+
+   <div id="pageContent">
   <!-- header -->
   <header class="header">
     <div class="header-top">
@@ -59,21 +83,23 @@
           </li>
         </ul>
       </div>
-      <div class="flex flex-wrap items-center gap-6">
+      <div class="flex flex-wrap items-center justify-center gap-6">
         <div class="flex flex-wrap items-center justify-center gap-4">
-          <p class="text-[18px]">Progress To Gold</p>
+          <p class="text-18">Progress To Gold</p>
           <div class="w-[213px] bg-white rounded-full h-2.5">
             <div class="bg-blue-100 h-2.5 rounded-full" style="width: 75%"></div>
           </div>
         </div>
         <div class="border-s flex items-center gap-4 px-4 font-Plus">
           <div class="flex items-center">
+            <img src="../assets/images/map.png" alt="map" width="24" height="16" class="mt-1">
             <select>
               <option value="Eng">Eng</option>
               <option value="Guj">Guj</option>
             </select>
           </div>
           <div class="flex items-center">
+            <img src="../assets/images/menoy.png" alt="map" width="24" height="24">
             <select>
               <option value="Eng">USD</option>
               <option value="Guj">USD</option>
@@ -171,7 +197,7 @@
             d="M13.0667 14L8.86667 9.8C8.53333 10.0667 8.15 10.2778 7.71667 10.4333C7.28333 10.5889 6.82222 10.6667 6.33333 10.6667C5.12222 10.6667 4.09722 10.2472 3.25833 9.40833C2.41944 8.56944 2 7.54444 2 6.33333C2 5.12222 2.41944 4.09722 3.25833 3.25833C4.09722 2.41944 5.12222 2 6.33333 2C7.54444 2 8.56944 2.41944 9.40833 3.25833C10.2472 4.09722 10.6667 5.12222 10.6667 6.33333C10.6667 6.82222 10.5889 7.28333 10.4333 7.71667C10.2778 8.15 10.0667 8.53333 9.8 8.86667L14 13.0667L13.0667 14ZM6.33333 9.33333C7.16667 9.33333 7.875 9.04167 8.45833 8.45833C9.04167 7.875 9.33333 7.16667 9.33333 6.33333C9.33333 5.5 9.04167 4.79167 8.45833 4.20833C7.875 3.625 7.16667 3.33333 6.33333 3.33333C5.5 3.33333 4.79167 3.625 4.20833 4.20833C3.625 4.79167 3.33333 5.5 3.33333 6.33333C3.33333 7.16667 3.625 7.875 4.20833 8.45833C4.79167 9.04167 5.5 9.33333 6.33333 9.33333Z"
             fill="#9E9E9E" />
         </svg>
-        <input type="text" placeholder="NeoDentGM....." class="text-[14px] font-roboto w-full" />
+        <input type="text" placeholder="NeoDentGM....." class="text-14 font-roboto w-full" />
         <img src="../assets/images/close.png" alt="close" height="17" width="17" id="close" />
       </div>
       <div class="search-item border-t">
@@ -180,7 +206,7 @@
             <img src="../assets/images/serch-item1.png" alt="search-item" height="62.87" width="62.87" />
           </div>
           <div class="text">
-            <h4 class="text-[16px] font-medium">NeoDentGM</h4>
+            <h4 class="text-16 font-medium">NeoDentGM</h4>
             <p class="flex items-center gap-1 text-[9.96px] text-gray">
               <img src="../assets/images/group.png" alt="group" height="10" width="10" />more than 20 pieces available
             </p>
@@ -194,7 +220,7 @@
           <h3 class="h3">#1000</h3>
           <div class="group flex items-center gap-1">
             <div class="red"></div>
-            <p class="text-[12px]">out of stock</p>
+            <p class="text-12">out of stock</p>
           </div>
         </div>
       </div>
@@ -204,7 +230,7 @@
             <img src="../assets/images/search-item2.png" alt="search-item" height="62.87" width="62.87" />
           </div>
           <div class="text">
-            <h4 class="text-[16px] font-medium">MegaGen AnyOne</h4>
+            <h4 class="text-16 font-medium">MegaGen AnyOne</h4>
             <p class="flex items-center gap-1 text-[9.96px] text-gray">
               <img src="../assets/images/group.png" alt="group" height="10" width="10" />more than 10 pieces available
             </p>
@@ -218,7 +244,7 @@
           <h3 class="h3">#1500</h3>
           <div class="group flex items-center gap-1">
             <div class="green"></div>
-            <p class="text-[12px]">in stock</p>
+            <p class="text-12">in stock</p>
           </div>
         </div>
       </div>
@@ -228,7 +254,7 @@
             <img src="../assets/images/search-item3.png" alt="search-item" height="62.87" width="62.87" />
           </div>
           <div class="text">
-            <h4 class="text-[16px] font-medium">MegaGen AnyOne</h4>
+            <h4 class="text-16 font-medium">MegaGen AnyOne</h4>
             <p class="flex items-center gap-1 text-[9.96px] text-gray">
               <img src="../assets/images/group.png" alt="group" height="10" width="10" />more than 10 pieces available
             </p>
@@ -242,7 +268,7 @@
           <h3 class="h3">#1500</h3>
           <div class="group flex items-center gap-1">
             <div class="green"></div>
-            <p class="text-[12px]">in stock</p>
+            <p class="text-12">in stock</p>
           </div>
         </div>
       </div>
@@ -284,7 +310,7 @@
           <img src="../assets/images/fram-white.png" alt="fram" width="24" height="24" class="fram-white" />
         </div>
       </div>
-      <div class="menu-item w-full md:w-[769px] xl:mx-6 pe-6 border my-4 xl:my-0">
+      <div class="menu-item w-full md:w-[769px] xl:mx-6 pe-6 my-4 xl:my-0">
         <div class="title font-Plus text-20 font-semibold">
           <h2>FEATURED PRODUCTS</h2>
         </div>
@@ -351,7 +377,7 @@
         <img src="../assets/images/image1.png" alt="image" width="167.56" height="147.35" />
         <h2 class="h2">21% Discount</h2>
         <div class="my-2 flex flex-col items-center">
-          <p class="text-[17.68px] font-Plus font-medium text-white mt-2">
+          <p class="text-17.68 font-Plus font-medium text-white mt-2">
             Premium Implant System
           </p>
           <p class="font-roboto text-white flex items-center gap-1 text-[13.13px]">
@@ -361,12 +387,13 @@
         </div>
         <div class="flex items-center gap-2">
           <p class="text-[15.47px] font-Plus">Starting price:</p>
-          <p class="bg-white py-1 px-3 text-[17.68px] rounded-[3.32px]">
+          <p class="bg-white py-1 px-3 text-17.68 rounded-[3.32px]">
             $99 USD
           </p>
         </div>
         <div class="shop-now-btn">
-          <a href="#" class="shop-btn"><img src="../assets/images/shop.png" alt="shop" /> Shop Now</a>
+          <a href="#" class="shop-btn"><img src="../assets/images/shop.png" alt="shop" width="17" height="13" /> Shop
+            Now</a>
         </div>
         <img src="../assets/images/design.png" alt="design" width="121.43" height="79.48"
           class="absolute bottom-0 right-0 rotate-180" />
@@ -381,10 +408,10 @@
       <div class="swiper-slide slide-1">
         <div class="slide1-item-1">
           <div class="title">
-            <h1 class="flex flex-wrap items-center gap-2 text-3xl font-bold">
+            <h1 class="flex flex-wrap items-center gap-2 text-54 font-bold relative">
               Superior Dental
-              <img src="../assets/images/title-img1.png" alt="Precision Image" width="129" height="45" class="mt-2" />
-              <span class="float-right">Implants</span> Unmatched Precision &
+              <img src="../assets/images/title-img1.png" alt="Precision Image" width="129" height="45" class="mt-2 float-start"/>
+              <span class="absolute top-0 right-0">Implants</span> Unmatched Precision &
               <img src="../assets/images/title-img2.png" alt="Precision Image" width="129" height="45" class="mt-2" />
               Longevity
             </h1>
@@ -421,7 +448,8 @@
               </div>
             </div>
             <div class="shop-now-btn w-[175px]">
-              <a href="#" class="shop-btn-2"><img src="../assets/images/shop.png" alt="shop" /> Shop
+              <a href="#" class="shop-btn-2"><img src="../assets/images/shop.png" alt="shop" width="17" height="13" />
+                Shop
                 Now</a>
             </div>
           </div>
@@ -468,10 +496,11 @@
             </p>
           </div>
           <div class="shop-now-btn w-[175px] my-5">
-            <a href="#" class="shop-btn-2"><img src="../assets/images/shop.png" alt="shop" /> Shop Now</a>
+            <a href="#" class="shop-btn-2"><img src="../assets/images/shop.png" alt="shop" width="17" height="13" />
+              Shop Now</a>
           </div>
         </div>
-        <div class="swiper slide2-slider">
+        <div class="swiper slide2-slider hidden lg:block">
           <div class="slide">
             <img src="../assets/images/slid1.png" alt="image" width="226" height="343.5" />
           </div>
@@ -531,7 +560,8 @@
                 </div>
               </div>
               <div class="shop-now-btn w-[175px]">
-                <a href="#" class="shop-btn-2"><img src="../assets/images/shop.png" alt="shop" /> Shop
+                <a href="#" class="shop-btn-2"><img src="../assets/images/shop.png" alt="shop" width="17" height="13" />
+                  Shop
                   Now</a>
               </div>
             </div>
@@ -541,25 +571,31 @@
           <img src="../assets/images/design3.png" alt="desing" width="96.59" height="96.59"
             class="absolute left-40 top-10" />
         </div>
-        <div class="swiper swiper-slider-3">
+        <div class="swiper swiper-slider-3  hidden lg:block">
           <div class="swiper-wrapper">
             <div class="image swiper-slide">
-              <img class="swiper-slide" src="../assets/images/slid3-item.png" alt="Swiper" aria-colcount="rounded-md" />
+              <img class="swiper-slide" src="../assets/images/slid3-item.png" alt="Swiper" aria-colcount="rounded-md"
+                width="500.28" height="630.13" />
             </div>
             <div class="image swiper-slide">
-              <img class="swiper-slide" src="../assets/images/slid3-item.png" alt="Swiper" aria-colcount="rounded-md" />
+              <img class="swiper-slide" src="../assets/images/slid3-item.png" alt="Swiper" aria-colcount="rounded-md"
+                width="500.28" height="630.13" />
             </div>
             <div class="image swiper-slide">
-              <img class="swiper-slide" src="../assets/images/slid3-item.png" alt="Swiper" aria-colcount="rounded-md" />
+              <img class="swiper-slide" src="../assets/images/slid3-item.png" alt="Swiper" aria-colcount="rounded-md"
+                width="500.28" height="630.13" />
             </div>
             <div class="image swiper-slide">
-              <img class="swiper-slide" src="../assets/images/slid3-item.png" alt="Swiper" aria-colcount="rounded-md" />
+              <img class="swiper-slide" src="../assets/images/slid3-item.png" alt="Swiper" aria-colcount="rounded-md"
+                width="500.28" height="630.13" />
             </div>
             <div class="image swiper-slide">
-              <img class="swiper-slide" src="../assets/images/slid3-item.png" alt="Swiper" aria-colcount="rounded-md" />
+              <img class="swiper-slide" src="../assets/images/slid3-item.png" alt="Swiper" aria-colcount="rounded-md"
+                width="500.28" height="630.13" />
             </div>
             <div class="image swiper-slide">
-              <img class="swiper-slide" src="../assets/images/slid3-item.png" alt="Swiper" aria-colcount="rounded-md" />
+              <img class="swiper-slide" src="../assets/images/slid3-item.png" alt="Swiper" aria-colcount="rounded-md"
+                width="500.28" height="630.13" />
             </div>
           </div>
         </div>
@@ -571,7 +607,7 @@
 
   <!-- track -->
   <section class="track">
-    <div class="flex items-center pe-10">
+    <div class="flex items-center xl:pe-10">
       <div class="icon">
         <img src="../assets/images/call.png" alt="call" width="34" height="33.02" />
       </div>
@@ -584,7 +620,7 @@
         </div>
       </div>
     </div>
-    <div class="flex items-center pe-10">
+    <div class="flex items-center xl:pe-10 my-3 xl:my-0">
       <div class="icon">
         <img src="../assets/images/time.png" alt="call" width="34" height="33.02" />
       </div>
@@ -599,7 +635,8 @@
       </div>
     </div>
     <div class="shop-now-btn">
-      <a href="#" class="shop-btn-2 px-5"><img src="../assets/images/track.png" alt="shop" /> Track Your
+      <a href="#" class="shop-btn-2 px-5"><img src="../assets/images/track.png" alt="shop" width="17" height="13" />
+        Track Your
         Order</a>
     </div>
   </section>
@@ -613,7 +650,7 @@
           <img src="../assets/images/teeth-icon.png" alt="teeth-icon" width="16" height="16">
           <p>Shop By System</p>
         </div>
-        <div class="title w-[746px]">
+        <div class="title xl:w-[746px]">
           <h2>Find the Perfect Implant Solution Tailored for Every Case!</h2>
         </div>
       </div>
@@ -964,15 +1001,18 @@
           </div>
         </div>
       </div>
-      <div class="swiper-button-prev"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13"
-          fill="none">
-          <path d="M3.4 6.19995L8 10.8L6.6 12.2L0.6 6.19995L6.6 0.199951L8 1.59995L3.4 6.19995Z" fill="black" />
-        </svg></div>
-      <div class="swiper-button-next"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13"
-          fill="none">
-          <path d="M4.6 6.19995L-1.22392e-07 10.8L1.4 12.2L7.4 6.19995L1.4 0.199951L-9.26681e-07 1.59995L4.6 6.19995Z"
-            fill="white" />
-        </svg></div>
+      <div class="absolute top-54 z-20 flex justify-between w-full">
+        <div class="prev">
+          <div class="swiper-button-prev">
+            <img src="../assets/images/prev.svg" alt="prev" width="7.4" height="12">
+          </div>
+        </div>
+        <div class="next">
+          <div class="swiper-button-next">
+            <img src="../assets/images/next.svg" alt="next" width="7.4" height="12">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- shop-by-system end -->
@@ -1093,15 +1133,25 @@
         </div>
       </div>
 
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="absolute top-30 z-20 flex justify-between w-full">
+        <div class="prev">
+          <div class="swiper-button-prev">
+            <img src="../assets/images/prev.svg" alt="prev" width="7.4" height="12">
+          </div>
+        </div>
+        <div class="next">
+          <div class="swiper-button-next">
+            <img src="../assets/images/next.svg" alt="next" width="7.4" height="12">
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <!-- Shop-By-Case end -->
 
   <!-- works -->
   <section class="works">
-    <img src="../assets/images/design.png" alt="design" class="absolute top-0 left-0">
+    <img src="../assets/images/design.png" alt="design" class="absolute top-0 right-0">
     <div class="work-menu">
       <div class="subtitle justify-center">
         <img src="../assets/images/teeth-icon.png" alt="teeth-icon" width="16" height="16">
@@ -1128,7 +1178,7 @@
         </div>
       </div>
       <div class="work-item">
-        <img src="../assets/images/play.png" alt="" width="186">
+        <img src="../assets/images/play.png" alt="" width="186" class="hidden lg:block">
       </div>
       <div class="work-item">
         <div class="icon">
@@ -1146,7 +1196,7 @@
         </div>
       </div>
       <div class="work-item">
-        <img src="../assets/images/play.png" alt="" width="186">
+        <img src="../assets/images/play.png" alt="" width="186" class="hidden lg:block">
       </div>
       <div class="work-item">
         <div class="icon">
@@ -1164,7 +1214,7 @@
         </div>
       </div>
     </div>
-    <img src="../assets/images/design.png" alt="design" class="absolute bottom-0 right-0 rotate-180">
+    <img src="../assets/images/design.png" alt="design" class="absolute bottom-0 left-0 rotate-180">
   </section>
   <!-- works end -->
 
@@ -1173,10 +1223,10 @@
     <div class="program-menu">
       <div class="subtitle justify-center">
         <img src="../assets/images/teeth-icon.png" alt="teeth-icon" width="16" height="16">
-        <p>How It Works</p>
+        <p>Loyalty Program</p>
       </div>
       <div class="title text-center">
-        <h2>Simple Steps to a Perfect Smile!</h2>
+        <h2>How It Works Simple Steps to a Perfect Smile!</h2>
       </div>
     </div>
     <div class="program-menu1">
@@ -1226,7 +1276,7 @@
             <li>Fre Express Shipping</li>
             <li>Priority Support</li>
           </ul>
-          <div class="flex justify-center bg-blue-500 rounded-20 mt-3">
+          <div class=" bt flex justify-center bg-blue-500 rounded-20 mt-3">
             <a href="#" class="btn"><img src="../assets/images/pragrom.png" alt="pragrom" width="18" height="18">How to
               reach Gold?</a>
           </div>
@@ -1255,7 +1305,7 @@
             <li>VIP Support 24/7</li>
             <li>Exclusive Events</li>
           </ul>
-          <div class="flex justify-center bg-blue-500 rounded-20 mt-3">
+          <div class="bt flex justify-center bg-blue-500 rounded-20 mt-3">
             <a href="#" class="btn"><img src="../assets/images/pragrom.png" alt="pragrom" width="18" height="18">How to
               reach Platinum?</a>
           </div>
@@ -1376,6 +1426,22 @@
           <p>Satisfied Clinics</p>
         </div>
       </div>
+      <div class="items">
+        <div class="Professionals-title">
+          <h3>99%</h3>
+        </div>
+        <div class="Professionals-content">
+          <p>Satisfaction Rate</p>
+        </div>
+      </div>
+      <div class="items">
+        <div class="Professionals-title">
+          <h3>1,000+</h3>
+        </div>
+        <div class="Professionals-content">
+          <p>Satisfied Clinics</p>
+        </div>
+      </div>
     </div>
 
 
@@ -1388,24 +1454,27 @@
     <div class="about-img">
       <img src="../assets/images/about.png" alt="about" width="682" height="609">
     </div>
-    <div class="about-text w-[746px]">
+    <div class="about-text xl:w-[746px] p-3">
       <div class="subtitle">
         <img src="../assets/images/teeth-icon.png" alt="teeth-icon" width="16" height="16">
         <p>About Us</p>
       </div>
-      <div class="title w-[746px]">
+      <div class="title">
         <h2>Committed to Restoring Smiles with Premium Dental Implants</h2>
       </div>
       <div class="contact2 text-[#787878] my-4">
-        <p>We specialize in providing high-quality dental implants designed for precision, durability, and seamless integration. Trusted by dental professionals worldwide, our products ensure long-term patient satisfaction and success.</p>
+        <p>We specialize in providing high-quality dental implants designed for precision, durability, and seamless
+          integration. Trusted by dental professionals worldwide, our products ensure long-term patient satisfaction and
+          success.</p>
       </div>
-      <div class="flex justify-between border-y border-[#eaeaf0] py-6 my-3">
+      <div class="flex flex-wrap justify-between border-y border-[#eaeaf0] py-6 my-3">
         <div class="flex items-center w-[251px] gap-4">
           <h3><span class="black-title text-blue-500">25+</span><br><span class="blue-text">Years</span></h3>
           <p class="text">Delivering innovation in dental implants.</p>
         </div>
         <div class="flex items-center w-[343px] gap-4">
-          <h3><span class="black-title text-blue-500">100%</span><span class="blue-text">Customer</span><br><span class="blue-text">Years</span></h3>
+          <h3><span class="black-title text-blue-500">100%</span><span class="blue-text">Customer</span><br><span
+              class="blue-text">Years</span></h3>
           <p class="text">Trusted by professionals globally.</p>
         </div>
       </div>
@@ -1417,20 +1486,28 @@
   <!-- about end -->
 
   <!-- Testimonials -->
-   <section class="Testimonials">
-    <div class="Testimonials-menu border-b border-[#C6C6C6] py-2">
+  <section class="Testimonials">
+    <div class="Testimonials-menu border-b border-[#C6C6C6] py-2 flex items-center justify-between">
       <div class="Testimonials-item">
         <div class="subtitle">
           <img src="../assets/images/teeth-icon.png" alt="teeth-icon" width="16" height="16">
-          <p>Shop By System</p>
+          <p>Testimonials</p>
         </div>
-        <div class="title w-[746px]">
-          <h2>Find the Perfect Implant Solution Tailored for Every Case!</h2>
+        <div class="title xl:w-[746px]">
+          <h2>Superior Quality. Seamless Restorations</h2>
         </div>
       </div>
-      <div class="slide-arr flex items-center gap-2">
-        <div class="swiper-button-prev Testimonials-button-prev"></div>
-        <div class="swiper-button-next Testimonials-button-next"></div>
+      <div class="z-20 flex gap-2">
+        <div class="prev">
+          <div class="swiper-button-prev">
+            <img src="../assets/images/prev.svg" alt="prev" width="7.4" height="12">
+          </div>
+        </div>
+        <div class="next">
+          <div class="swiper-button-next">
+            <img src="../assets/images/next.svg" alt="next" width="7.4" height="12">
+          </div>
+        </div>
       </div>
     </div>
     <div class="swiper Testimonials-swiper">
@@ -1445,34 +1522,37 @@
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
           </ul>
           <div class="Testimonials-contant">
-            <p>I've been using Dentallmplants implants for over five years. The precision and quality are unmatched, leading to exceptional results for my patients!</p>
+            <p>I've been using Dentallmplants implants for over five years. The precision and quality are unmatched,
+              leading to exceptional results for my patients!</p>
           </div>
           <div class="people flex items-center gap-2 mt-3">
             <img src="../assets/images/Ellipse1.png" alt="image" width="30" height="30">
-            <div class="text"><p>Dr. John</p></div>
-            
+            <div class="text">
+              <p>Dr. John</p>
+            </div>
+
           </div>
         </div>
         <div class="swiper-slide">
@@ -1485,34 +1565,37 @@
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
           </ul>
           <div class="Testimonials-contant">
-            <p>The All-on-4 system has revolutionized the way I approach full-arch restorations. The stability and reliability of these implants have significantly improved patient.</p>
+            <p>The All-on-4 system has revolutionized the way I approach full-arch restorations. The stability and
+              reliability of these implants have significantly improved patient.</p>
           </div>
           <div class="people flex items-center gap-2 mt-3">
             <img src="../assets/images/Ellipse2.png" alt="image" width="30" height="30">
-            <div class="text"><p>Dr. Emily</p></div>
-            
+            <div class="text">
+              <p>Dr. Emily</p>
+            </div>
+
           </div>
         </div>
         <div class="swiper-slide">
@@ -1525,34 +1608,37 @@
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
           </ul>
           <div class="Testimonials-contant">
-            <p>Incorporating [Brand Name]’s digital workflow into my practice has been one of the best decisions I’ve made. The guided surgical solutions, precise scanning.</p>
+            <p>Incorporating [Brand Name]’s digital workflow into my practice has been one of the best decisions I’ve
+              made. The guided surgical solutions, precise scanning.</p>
           </div>
           <div class="people flex items-center gap-2 mt-3">
             <img src="../assets/images/Ellipse3.png" alt="image" width="30" height="30">
-            <div class="text"><p>Dr. Michael</p></div>
-            
+            <div class="text">
+              <p>Dr. Michael</p>
+            </div>
+
           </div>
         </div>
         <div class="swiper-slide">
@@ -1565,34 +1651,37 @@
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
           </ul>
           <div class="Testimonials-contant">
-            <p>I've been using Dentallmplants implants for over five years. The precision and quality are unmatched, leading to exceptional results for my patients!</p>
+            <p>I've been using Dentallmplants implants for over five years. The precision and quality are unmatched,
+              leading to exceptional results for my patients!</p>
           </div>
           <div class="people flex items-center gap-2 mt-3">
             <img src="../assets/images/Ellipse1.png" alt="image" width="30" height="30">
-            <div class="text"><p>Dr. John</p></div>
-            
+            <div class="text">
+              <p>Dr. John</p>
+            </div>
+
           </div>
         </div>
         <div class="swiper-slide">
@@ -1605,34 +1694,37 @@
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
           </ul>
           <div class="Testimonials-contant">
-            <p>The All-on-4 system has revolutionized the way I approach full-arch restorations. The stability and reliability of these implants have significantly improved patient.</p>
+            <p>The All-on-4 system has revolutionized the way I approach full-arch restorations. The stability and
+              reliability of these implants have significantly improved patient.</p>
           </div>
           <div class="people flex items-center gap-2 mt-3">
             <img src="../assets/images/Ellipse2.png" alt="image" width="30" height="30">
-            <div class="text"><p>Dr. Emily</p></div>
-            
+            <div class="text">
+              <p>Dr. Emily</p>
+            </div>
+
           </div>
         </div>
         <div class="swiper-slide">
@@ -1645,44 +1737,47 @@
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
-              <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="17.06" height="16.25" viewBox="0 0 18 18" fill="none">
                 <path
                   d="M8.09375 1.5625C8.46875 0.8125 9.53125 0.84375 9.875 1.5625L11.9375 5.71875L16.5 6.375C17.3125 6.5 17.625 7.5 17.0312 8.09375L13.75 11.3125L14.5312 15.8438C14.6562 16.6562 13.7812 17.2812 13.0625 16.9062L9 14.75L4.90625 16.9062C4.1875 17.2812 3.3125 16.6562 3.4375 15.8438L4.21875 11.3125L0.9375 8.09375C0.34375 7.5 0.65625 6.5 1.46875 6.375L6.0625 5.71875L8.09375 1.5625Z"
                   fill="#FFDF00" />
               </svg></li>
           </ul>
           <div class="Testimonials-contant">
-            <p>Incorporating [Brand Name]’s digital workflow into my practice has been one of the best decisions I’ve made. The guided surgical solutions, precise scanning.</p>
+            <p>Incorporating [Brand Name]’s digital workflow into my practice has been one of the best decisions I’ve
+              made. The guided surgical solutions, precise scanning.</p>
           </div>
           <div class="people flex items-center gap-2 mt-3">
             <img src="../assets/images/Ellipse3.png" alt="image" width="30" height="30">
-            <div class="text"><p>Dr. Michael</p></div>
-            
+            <div class="text">
+              <p>Dr. Michael</p>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
-   </section>
-   <!-- Testimonials end -->
+  </section>
+  <!-- Testimonials end -->
 
   <!-- contact -->
   <section class="contacts">
-    <div class="contacts-item">
+    <div class="contacts-item ">
       <div class="title">
         <h2>Stay Informed</h2>
       </div>
@@ -1711,7 +1806,7 @@
   <footer class="footer">
     <div class="footer-menu border-white">
       <div class="grid grid-cols-1 xl:grid-cols-2 gap-10 py-5">
-        <div class="w-[412px]">
+        <div class="xl:w-[412px]">
           <div class="footer-title">
             <h3>Dentallmplants.com</h3>
           </div>
@@ -1763,7 +1858,7 @@
             </ul>
           </div>
           <div class="items">
-            <div class="footer-title1">
+            <div class="black-title">
               <h4>Support</h4>
             </div>
             <ul class="list-image-[url(../assets/images/teath2.svg)] list-inside">
@@ -1773,7 +1868,7 @@
             </ul>
           </div>
           <div class="items">
-            <div class="footer-title1">
+            <div class="black-title">
               <h4>Legal</h4>
             </div>
             <ul class="list-image-[url(../assets/images/teath2.svg)] list-inside">
@@ -1792,6 +1887,8 @@
     </div>
   </footer>
   <!-- footer end -->
+</div>
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
