@@ -284,17 +284,15 @@ h1 {
   @apply w-[1000px] h-[694px] absolute right-0 top-20 z-10;
 }
 .banner-slide .slide-3 .swiper-slider-3 .swiper-slide {
-  transition: transform 0.5s ease;
-  transform: scale(0.9); 
-  @apply bg-white rounded-30;/* zoom out by default */
+  @apply bg-white rounded-30 transition-transform duration-500 ease-in-out scale-[0.9];
 }
 
 .banner-slide .slide-3 .swiper-slider-3 .swiper-slide-active {
-  transform: scale(1); /* zoom in active slide */
+ @apply transform scale-100;
 }
 
 .banner-slide .slide-3 .swiper-slider-3 .image {
-  @apply  p-10 ;
+  @apply  p-10;
 }
 
 .track {
@@ -317,7 +315,7 @@ h1 {
   @apply bg-blue-500 text-white rounded-10 py-9 px-40 font-roboto font-semibold text-[18.75px];
 }
 .shop-by-system-swiper .img{
-  @apply h-[264px] flex items-center justify-center
+  @apply h-[264px] flex items-center justify-center;
 }
 
 .Shop-By-Case{
