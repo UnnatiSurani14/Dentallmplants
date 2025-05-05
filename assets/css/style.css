@@ -43,9 +43,11 @@
   --text-56:56.3px; 
 
   --spacing-9:9px;
+  --spacing-10:10px;
   --spacing-11:11.5px;
   --spacing-12:12.5px;
   --spacing-13: 13px; 
+  --spacing-20: 20px;
  
   --radius-10:10px;
   --radius-15:15px;
@@ -135,7 +137,7 @@
   @apply absolute top-0 z-60 w-full h-screen flex justify-center items-center;
 }
 .popup{
-  @apply p-5 xl:p-10 xl:w-[634.74px] xl:h-[494.26] bg-white rounded-28 flex flex-col items-center justify-center;
+  @apply p-5 xl:p-20 xl:w-[634.74px] xl:h-[494.26] bg-white rounded-28 flex flex-col items-center justify-center;
 }
 .popup .popup-btn{
   @apply text-22 font-Plus font-bold flex items-center gap-2  py-[18px] px-3 xl:px-[137px] rounded-28 bg-blue-500 text-white; 
@@ -274,19 +276,29 @@ h1 {
 .banner-slide .slide-3 .swiper-slider-3 {
   @apply w-[1000px] h-[694px] absolute right-0 top-20 z-10;
 }
+.banner-slide .slide-3 .swiper-slider-3 .swiper-slide {
+  transition: transform 0.5s ease;
+  transform: scale(0.9); 
+  @apply bg-white rounded-30;/* zoom out by default */
+}
+
+.banner-slide .slide-3 .swiper-slider-3 .swiper-slide-active {
+  transform: scale(1); /* zoom in active slide */
+}
+
 .banner-slide .slide-3 .swiper-slider-3 .image {
-  @apply bg-white p-10 rounded-30;
+  @apply  p-10 ;
 }
 
 .track {
-  @apply bg-white m-auto xl:w-[1183.33px] rounded-t-40 flex flex-wrap items-center justify-evenly p-2 xl:p-10  absolute xl:-mt-16 xl:left-30 xxl:left-90 z-30;
+  @apply bg-white m-auto xl:w-[1183.33px] rounded-t-40 flex flex-wrap items-center justify-evenly p-2 xl:p-20  absolute xl:-mt-16 xl:left-30 xxl:left-90 z-30;
 }
 .track .icon {
   @apply bg-blue-500 h-[70px] w-[70px] rounded-15 flex justify-center items-center mx-3;
 }
 
 .shop-by-system{
-  @apply xxl:container m-auto mt-70 xl:mt-40 xl:p-10;
+  @apply xxl:container m-auto mt-70 xl:mt-40 xl:p-20;
 }
 .shop-by-system .shop-by-system-menu,.Shop-By-Case-menu{
   @apply flex flex-wrap items-center justify-between my-5;
@@ -302,7 +314,7 @@ h1 {
 }
 
 .Shop-By-Case{
-  @apply xxl:container m-auto mb-10 p-10;
+  @apply xxl:container m-auto mb-10 p-20;
 }
 .Shop-By-Case .img{
   @apply flex justify-center items-center bg-white border-[3px] border-blue-500 rounded-40 h-[241px];
@@ -358,7 +370,7 @@ h1 {
   @apply border-b border-gray flex items-center justify-between pb-4;
 }
 .program-btn{
-  @apply bg-blue-800 rounded-20 text-white p-1 font-roboto font-semibold px-2; 
+  @apply bg-blue-800 rounded-20 text-white p-1 font-roboto font-semibold px-10; 
 }
 
 .serves{
@@ -406,6 +418,7 @@ h1 {
 .Testimonials{
   @apply xxl:container m-auto xxl:mb-56 p-4 xl:px-16;
 }
+
 .Testimonials-swiper .swiper-slide{
   @apply rounded-40 border-3 border-blue-500 p-5 relative bg-white;
 }
