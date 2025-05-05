@@ -7,7 +7,6 @@
   --color-lightgreen:#4E9B18;
   --color-gray: #8E8E8E;
   --color-black-100: #191c1f;
-  --color-blue: #5e5eee;
   --color-blue-100: #0000be;
   --color-blue-200: #124767;
   --color-blue-300: #3aa2b2;
@@ -38,6 +37,7 @@
   --text-30.94:30.94px;
   --text-35: 35px;
   --text-40: 40px;
+  --text-50: 50px;
   --text-54: 54px;
   --text-56:56.3px; 
 
@@ -54,6 +54,10 @@
   --radius-28:28.15px;
   --radius-40:40px;
 
+  --breakpoint-375:375px;
+  --breakpoint-425:425px;
+  --breakpoint-768:768px;
+  --breakpoint-1024:1024px;
   --breakpoint-xl:1440px;
   --breakpoint-xxl:1510px;
 }
@@ -87,10 +91,13 @@
   @apply h-[40px] w-[40px] rounded-full bg-blue-500 flex justify-center items-center hover:shadow-sm shadow-black;
 }
 .btn {
-  @apply flex items-center bg-blue py-13 text-white px-8 rounded-20 gap-2 font-bold font-Plus text-16;
+  @apply flex items-center bg-blue-500 py-13 text-white px-8 rounded-20 gap-2 font-bold font-Plus text-16;
 }
 .btn:hover,.popup-btn:hover,.bt:hover{
-  @apply rounded-full bg-radial from-blue from-40% to-blue-100 shadow-md shadow-gray;
+  @apply rounded-full bg-radial from-blue-500 from-40% to-blue-100 shadow-md shadow-gray;
+}
+.h1{
+  @apply flex flex-wrap items-center gap-2 text-40 xl:text-54 font-bold relative;
 }
 .contact {
   @apply font-roboto text-16 font-normal;
@@ -108,33 +115,39 @@
   @apply font-Plus text-18 text-blue-500 font-bold flex items-center gap-2 mt-3;
 }
 .title1 {
-  @apply text-[54.87px] text-center;
+  @apply text-40 xl:text-[54.87px] text-center;
 }
 .title2 {
   @apply font-Plus text-20 font-semibold text-[#0B0B38];
+}
+.title-3{
+  @apply text-40 xl:text-50 font-Plus font-bold;
 }
 .black-title {
   @apply text-22 font-Plus font-semibold;
 }
 .like{
-  @apply py-13 px-13 rounded-20 bg-[#cdcdfa] hover:bg-blue;
+  @apply py-13 px-13 rounded-20 bg-[#cdcdfa] hover:bg-blue-500;
 }
 
 .popup-wrapper{
   @apply absolute top-0 z-60 w-full h-screen flex justify-center items-center;
 }
 .popup{
-  @apply p-10 w-[634.74px] h-[494.26] bg-white rounded-28 flex flex-col items-center justify-center;
+  @apply p-5 xl:p-10 xl:w-[634.74px] xl:h-[494.26] bg-white rounded-28 flex flex-col items-center justify-center;
 }
 .popup .popup-btn{
-  @apply text-22 font-Plus font-bold flex items-center gap-2 py-[18px] px-[137px] rounded-28 bg-blue-500 text-white; 
+  @apply text-22 font-Plus font-bold flex items-center gap-2  py-[18px] px-3 xl:px-[137px] rounded-28 bg-blue-500 text-white; 
+}
+.popup .popup-btn svg{
+  @apply h-[20px]
 }
 
 .header {
   @apply xl:h-[162px] sticky top-0 z-40 bg-white shadow;
 }
 .header .header-top {
-  @apply xl:h-[52px] border bg-blue text-white flex flex-wrap items-center justify-between p-2 xl:px-20 font-roboto;
+  @apply xl:h-[52px] border bg-blue-500 text-white flex flex-wrap items-center justify-between p-2 xl:px-20 font-roboto;
 }
 .header .header-top ul li a {
   @apply xl:text-18 hover:text-blue-100 hover:font-bold;
@@ -149,10 +162,10 @@
   @apply w-full xl:w-auto p-3 hidden xl:block;
 }
 .header .header-bottom .navbar ul li a {
-  @apply font-semibold text-18 hover:text-blue;
+  @apply font-semibold text-18 hover:text-blue-500;
 }
 .header .header-bottom .contact .icon {
-  @apply bg-blue h-[35px] w-[35px] rounded-full flex justify-center items-center cursor-pointer hover:shadow-md shadow-gray;
+  @apply bg-blue-500 h-[35px] w-[35px] rounded-full flex justify-center items-center cursor-pointer hover:shadow-md shadow-gray;
 }
 .header .header-bottom .contact .num {
   @apply absolute -top-1 right-0 h-[13px] w-[13px] bg-red text-white flex justify-center items-center rounded-full text-[10px];
@@ -213,10 +226,10 @@
 }
 
 .banner-slide {
-  @apply h-auto xl:h-[850px];
+  @apply  h-[900px] xl:h-[850px];
 }
 .banner-slide .slide-1 {
-  @apply bg-linear-to-r from-[#2C2C66] to-[#0B0B38] sm:flex justify-center items-center;
+  @apply bg-linear-to-r from-[#2C2C66] to-[#0B0B38] sm:flex justify-center items-center ;
 }
 .banner-slide .slide-1 .slide1-item-1 {
   @apply xl:h-[540px] xl:w-[793px] text-white p-2;
@@ -225,16 +238,16 @@ h1 {
   @apply text-54 font-Plus font-bold;
 }
 .banner-slide .slide-1 .slide1-item-2 {
-  @apply h-[604.8px] xl:w-[620px] relative;
+  @apply xl:h-[604.8px] xl:w-[620px] relative p-3;
 }
 .banner-slide .slide-1 .slide1-item-2 .review {
-  @apply absolute bottom-36 bg-white rounded-15 p-5 h-[143.79px] w-[275px];
+  @apply 375:absolute 768:absolute 375:left-10 768:left-0 max-375:top-0 768:bottom-3 xl:bottom-36 bg-white rounded-15 p-5 h-[143.79px] min-375:w-[275px] w-[275px];
 }
 .shop-btn-2 {
-  @apply bg-blue-500 w-auto text-white py-[11.74px] flex justify-center items-center gap-2 text-17.68 font-bold font-Plus my-4 rounded-[22px];
+  @apply bg-blue-500 w-auto text-white px-3 py-[11.74px] flex justify-center items-center gap-2 text-17.68 font-bold font-Plus my-4 rounded-[22px];
 }
 .banner-slide .slide-2 {
-  @apply bg-[#050607] flex flex-col items-center text-white relative;
+  @apply bg-[#050607] flex flex-col items-center text-white relative overflow-hidden;
 }
 .banner-slide .slide-2 .slide2-slider {
   @apply h-[405px] w-[1190px] flex items-center;
@@ -246,16 +259,16 @@ h1 {
   @apply drop-shadow-xl;
 }
 .banner-slide .slide-2 .color {
-  @apply absolute -bottom-[50%] h-[900px] w-full bg-[radial-gradient(at_50%_75%,_#5E5EEE_20%,_#2E9AFF_20%,_#050607_60%)] rounded-t-full opacity-50;
+  @apply absolute -bottom-[50%] h-[700px] xl:h-[900px] w-full bg-[radial-gradient(at_50%_75%,_#5E5EEE_20%,_#2E9AFF_20%,_#050607_60%)] rounded-t-full opacity-50;
 }
 .banner-slide .slide-3 {
   @apply bg-[#1D1D1D];
 }
 .banner-slide .slide-3 .slide3-item {
-  @apply w-[1156px] h-full text-white bg-gradient-to-r from-[#1D1D1D] via-[#151515] to-[#15151529] absolute left-0 flex items-center z-30;
+  @apply w-full xl:w-[1156px] h-full text-white bg-gradient-to-r from-[#1D1D1D] via-[#151515] to-[#15151529] absolute left-0 flex items-center z-30;
 }
 .banner-slide .slide-3 .slide3-item .slide3-item-1 {
-  @apply w-[700px] ms-[10%];
+  @apply p-2 xl:w-[700px] xl:ms-[10%];
 }
 .banner-slide .slide-3 .swiper-slider-3 {
   @apply w-[1000px] h-[694px] absolute right-0 top-20 z-10;
@@ -323,7 +336,7 @@ h1 {
   @apply font-Lato font-bold text-20;
 }
 .program .program-menu1{
-  @apply container m-auto p-5 grid xl:grid-cols-3 gap-8;
+  @apply container m-auto p-5 grid 1024:grid-cols-2 xl:grid-cols-3  gap-8;
 }
 .program .program-menu1 li{
   @apply font-medium mt-2;
@@ -396,7 +409,7 @@ h1 {
   @apply rounded-40 border-3 border-blue-500 p-5 relative bg-white;
 }
 .Testimonials-contant{
-  @apply font-roboto font-bold text-22  text-gray pe-12;
+  @apply font-roboto font-bold text-22  text-gray pe-12 768:line-clamp-4 xl:line-clamp-none;
 }
 .Testimonials .text{
   @apply text-18 font-Plus font-medium text-black;
@@ -412,19 +425,19 @@ h1 {
   @apply text-22 font-roboto my-3;
 }
 .contacts form {
-  @apply flex flex-wrap gap-4 p-4;
+  @apply flex flex-wrap justify-center gap-4 p-4;
 }
 .contacts form input::placeholder{
   @apply text-[#C6C6C6] font-roboto text-18;
 }
 .subscrine-btn{
-  @apply  bg-white rounded-20 text-blue-500 font-Plus font-bold w-[176px] h-[50px] hover:ring-4 ring-blue-700 hover:shadow-md shadow-black;
+  @apply  bg-white rounded-20 text-blue-500 font-Plus font-bold w-full 425:w-[300px] sm:w-[176px] h-[50px] hover:ring-4 ring-blue-700 hover:shadow-md shadow-black;
 }
 .contacts .contacts-item1{
   @apply xxl:w-[489px] bg-blue-700 flex flex-col items-center p-5 rounded-md;
 }
 .chat-btn{
-  @apply bg-white text-blue-500 py-11 px-6 font-Plus font-bold text-18 flex items-center gap-2 rounded-20 my-3 hover:ring-4 ring-blue-500 hover:shadow-md shadow-black;
+  @apply bg-white text-blue-500  py-11 px-6 font-Plus font-bold text-18 flex items-center gap-2 rounded-20 my-3 hover:ring-4 ring-blue-500 hover:shadow-md shadow-black;
 }
 
 .footer {
