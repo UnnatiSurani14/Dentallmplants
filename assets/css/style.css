@@ -48,6 +48,7 @@
   --spacing-12:12.5px;
   --spacing-13: 13px; 
   --spacing-20: 20px;
+  --spacing-40: 40px;
  
   --radius-10:10px;
   --radius-15:15px;
@@ -178,7 +179,7 @@
   @apply fixed w-full z-40;
 }
 .searchbar {
-  @apply border m-auto rounded-b-2xl w-[935px] font-roboto bg-white hidden;
+  @apply border m-auto rounded-b-2xl xl:w-[935px] font-roboto bg-white hidden;
 }
 .searchbar .red,
 .green {
@@ -237,6 +238,9 @@
 .banner-slide .slide-1 .slide1-item-1 {
   @apply xl:h-[540px] xl:w-[793px] text-white p-2;
 }
+.banner-slide .rates{
+  @apply grid grid-cols-3 gap-2 border-y border-gray-600 w-full me-20 xxl:w-[90%];
+}
 h1 {
   @apply text-54 font-Plus font-bold;
 }
@@ -247,10 +251,13 @@ h1 {
   @apply 375:absolute 768:absolute 375:left-10 768:left-0 max-375:top-0 768:bottom-3 xl:bottom-36 bg-white rounded-15 p-5 h-[143.79px] min-375:w-[275px] w-[275px];
 }
 .shop-btn-2 {
-  @apply bg-blue-500 w-auto text-white px-3 py-[11.74px] flex justify-center items-center gap-2 text-17.68 font-bold font-Plus my-4 rounded-[22px];
+  @apply bg-blue-500 w-auto text-white px-3 py-[11.74px] flex justify-center items-center gap-2 text-17.68 font-bold font-Plus my-4 rounded-[22px] hover:bg-blue-100;
 }
 .banner-slide .slide-2 {
   @apply bg-[#050607] flex flex-col items-center text-white relative overflow-hidden;
+}
+.banner-slide .slide-2 .slide-2-item{
+  @apply  xl:w-[742px] my-5 flex flex-col items-center p-2 xl:p-0;
 }
 .banner-slide .slide-2 .slide2-slider {
   @apply h-[405px] w-[1190px] flex items-center;
@@ -307,7 +314,7 @@ h1 {
   @apply bg-white rounded-40 overflow-hidden;
 }
 .tag{
-  @apply bg-blue-500 text-white rounded-10 py-9 px-10 font-roboto font-semibold text-[18.75px];
+  @apply bg-blue-500 text-white rounded-10 py-9 px-40 font-roboto font-semibold text-[18.75px];
 }
 .shop-by-system-swiper .img{
   @apply h-[264px] flex items-center justify-center
@@ -319,11 +326,14 @@ h1 {
 .Shop-By-Case .img{
   @apply flex justify-center items-center bg-white border-[3px] border-blue-500 rounded-40 h-[241px];
 }
+.casebutton{
+  @apply m-auto bg-blue-500 w-[80%] flex justify-center rounded-10 -mt-8 hover:bg-white hover:shadow-md; 
+}
 .case{
   @apply bg-white h-[35px] w-[35px] rounded-full flex justify-center items-center;
 }
 .case-btn{
-  @apply flex items-center gap-2 bg-blue-500 text-22 font-roboto font-bold text-white py-12 xxl:px-5 rounded-10;
+  @apply flex items-center gap-2 bg-blue-500 text-22 font-roboto font-bold text-white py-12 xxl:px-5 rounded-10  hover:bg-white hover:text-blue-900;
 }
 
 .works{
@@ -377,7 +387,7 @@ h1 {
   @apply flex flex-col items-center;
 }
 .serves .serves-menu1{
-  @apply flex flex-wrap justify-center items-center gap-6 my-10;
+  @apply flex flex-wrap justify-center items-center gap-7 my-10;
 }
 .serves .serves-menu1 .serves-item{
   @apply border-3 border-blue-500 rounded-40 w-[365px] overflow-hidden;
@@ -407,6 +417,9 @@ h1 {
 
 .about{
   @apply flex flex-wrap items-center justify-center gap-[99px] xxl:h-[709px] mb-30 ;
+}
+.about .img{
+  @apply xl:w-[450px] xxl:w-[682px]
 }
 .blue-text{
   @apply text-18 font-Plus font-semibold text-blue-500;
@@ -458,7 +471,7 @@ h1 {
   @apply bg-black text-white h-auto xl:h-[573px] relative;
 }
 .footer .footer-menu {
-  @apply container xl:absolute bottom-0 xl:left-40 p-5 text-white;
+  @apply container xl:absolute bottom-0 xl:left-48 p-5 text-white;
 }
 .footer-title,.contects-title {
   @apply font-Plus text-30 font-bold;
