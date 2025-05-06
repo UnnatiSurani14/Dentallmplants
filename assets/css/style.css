@@ -146,7 +146,7 @@
 }
 }
 
-
+/* popup */
 .popup-wrapper{
   @apply absolute top-0 z-60 w-full h-screen flex justify-center items-center;
 }
@@ -160,6 +160,7 @@
   @apply h-[20px]
 }
 
+/* header */
 .header {
   @apply xl:h-[162px] sticky top-0 z-40 bg-white shadow;
 }
@@ -188,6 +189,7 @@
   @apply absolute -top-1 right-0 h-[13px] w-[13px] bg-red text-white flex justify-center items-center rounded-full text-[10px];
 }
 
+/* search */
 .searchbar-weapper {
   @apply fixed w-full z-40;
 }
@@ -208,6 +210,7 @@
   @apply flex justify-between items-center p-5;
 }
 
+/* product */
 .product-menu {
   @apply fixed z-20 h-[603px] flex flex-wrap flex-row justify-center items-center p-2 xl:p-10 w-full bg-white;
 }
@@ -242,6 +245,7 @@
   @apply font-Plus text-white font-semibold text-30.94;
 }
 
+/* banner */
 .banner-slide {
   @apply  h-[900px] xl:h-[850px];
 }
@@ -305,15 +309,14 @@ h1 {
 .banner-slide .slide-3 .swiper-slider-3 .swiper-slide {
   @apply bg-white rounded-30 transition-transform duration-500 ease-in-out scale-[0.9];
 }
-
 .banner-slide .slide-3 .swiper-slider-3 .swiper-slide-active {
  @apply transform scale-100;
 }
-
 .banner-slide .slide-3 .swiper-slider-3 .image {
   @apply  p-10;
 }
 
+/* track */
 .track {
   @apply bg-white m-auto xl:w-[1183.33px] rounded-t-40 flex flex-wrap items-center justify-evenly p-2 xl:p-20  absolute xl:-mt-16 xl:left-30 xxl:left-90 z-30;
 }
@@ -328,6 +331,7 @@ h1 {
 }
 
 
+/* .shop-by-system */
 .shop-by-system{
   @apply xxl:container m-auto mt-70 xl:mt-40 xl:p-20;
 }
@@ -344,6 +348,7 @@ h1 {
   @apply h-[264px] flex items-center justify-center;
 }
 
+/* Shop-By-Case */
 .Shop-By-Case{
   @apply xxl:container m-auto mb-10 p-20;
 }
@@ -372,6 +377,7 @@ h1 {
   @apply block;
 }
 
+/* works */
 .works{
   @apply relative flex flex-col items-center p-2 mb-30;
 }
@@ -388,6 +394,7 @@ h1 {
   @apply bg-blue-500 flex justify-center items-center h-[60px] w-[60px] rounded-full my-3;
 }
 
+/* program */
 .program{
   @apply relative h-auto xl:h-[379px] flex flex-col items-center p-2 mb-30;
 }
@@ -427,11 +434,11 @@ h1 {
 .program .bt{
   @apply  flex justify-center bg-blue-500 rounded-20 mt-3 hover:bg-white;
 }
-
 .bt:hover .btn{
   @apply border-none
 }
 
+/* serves */
 .serves{
   @apply flex flex-col items-center;
 }
@@ -445,6 +452,7 @@ h1 {
   @apply bg-blue-500 flex items-center justify-center h-[100px] font-Plus font-semibold text-26 text-white;
 }
 
+/* Professionals */
 .Professionals{
   @apply relative flex flex-col items-center justify-center h-[519px];
 }
@@ -464,6 +472,7 @@ h1 {
   @apply h-1;
 }
 
+/* about */
 .about{
   @apply flex flex-wrap items-center justify-center gap-[99px] xxl:h-[709px] mb-30 ;
 }
@@ -483,7 +492,7 @@ h1 {
   @apply font-roboto text-[#696969];
 }
 
-
+/* Testimonials */
 .Testimonials{
   @apply xxl:container m-auto xxl:mb-56 p-4 xl:px-16;
 }
@@ -500,6 +509,7 @@ h1 {
   @apply absolute right-1 -top-6 bg-blue-500 flex items-center justify-center h-[54px] w-[54px] rounded-full;
 }
 
+/* contact */
 .contacts {
   @apply xxl:absolute m-auto left-44 z-40 container text-white bg-blue-500 flex flex-wrap justify-evenly items-center rounded-20 border-8 border-white xxl:-mt-44 py-14;
 }
@@ -531,6 +541,7 @@ h1 {
   @apply stroke-white;
 }
 
+/* footer */
 .footer {
   @apply bg-black text-white h-auto xl:h-[573px] relative;
 }
