@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-sky-300: oklch(82.8% 0.111 230.318);
     --color-blue-100: #0000be;
     --color-blue-200: #124767;
     --color-blue-300: #3aa2b2;
@@ -597,8 +598,14 @@
   .text-20 {
     font-size: var(--text-20);
   }
+  .text-22 {
+    font-size: var(--text-22);
+  }
   .text-40 {
     font-size: var(--text-40);
+  }
+  .text-56 {
+    font-size: var(--text-56);
   }
   .text-\[7\.82px\] {
     font-size: 7.82px;
@@ -1389,9 +1396,12 @@
 }
 h1 {
   font-family: var(--font-Plus);
-  font-size: var(--text-54);
+  font-size: var(--text-40);
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
+  @media (width >= 1440px) {
+    font-size: var(--text-54);
+  }
 }
 .banner-slide .slide-1 .slide1-item-2 {
   position: relative;
@@ -1405,12 +1415,16 @@ h1 {
 }
 .banner-slide .slide-1 .slide1-item-2 .img {
   margin-inline-start: auto;
-  height: 605px;
-  width: 540px;
   overflow: hidden;
   border-radius: var(--radius-40);
   border-style: var(--tw-border-style);
   border-width: 1px;
+  @media (width >= 1440px) {
+    height: 605px;
+  }
+  @media (width >= 1440px) {
+    width: 540px;
+  }
 }
 .banner-slide .slide-1 .slide1-item-2 .img .img-item {
   height: 100%;
@@ -1432,31 +1446,18 @@ h1 {
   }
 }
 .banner-slide .slide-1 .slide1-item-2 .review {
+  position: absolute;
+  top: calc(var(--spacing) * 0);
   height: 143.79px;
   width: 275px;
   border-radius: var(--radius-15);
   background-color: var(--color-white);
   padding: calc(var(--spacing) * 5);
-  @media (width < 375px) {
-    top: calc(var(--spacing) * 0);
-  }
-  @media (width >= 375px) {
-    position: absolute;
-  }
-  @media (width >= 375px) {
-    left: var(--spacing-10);
-  }
   @media (width >= 375px) {
     width: 275px;
   }
   @media (width >= 768px) {
-    position: absolute;
-  }
-  @media (width >= 768px) {
-    bottom: calc(var(--spacing) * 3);
-  }
-  @media (width >= 768px) {
-    left: calc(var(--spacing) * 0);
+    top: auto;
   }
   @media (width >= 1440px) {
     bottom: calc(var(--spacing) * 36);
@@ -2189,6 +2190,23 @@ h1 {
   @media (width >= 1510px) {
     width: 682px;
   }
+}
+.about-img-text {
+  position: absolute;
+  right: calc(var(--spacing) * 0);
+  bottom: calc(var(--spacing) * 0);
+  display: none;
+  height: 242px;
+  width: 243px;
+  border-radius: var(--radius-40);
+  background-color: var(--color-sky-300);
+  padding-top: calc(var(--spacing) * 16);
+  text-align: center;
+  opacity: 80%;
+  transition-delay: 300ms;
+}
+.about-img:hover .about-img-text {
+  display: block;
 }
 .blue-text {
   font-family: var(--font-Plus);

@@ -255,19 +255,19 @@
   @apply grid grid-cols-3 gap-2 border-y border-gray-600 w-full me-20 xxl:w-[90%];
 }
 h1 {
-  @apply text-54 font-Plus font-bold;
+  @apply text-40 xl:text-54 font-Plus font-bold;
 }
 .banner-slide .slide-1 .slide1-item-2 {
   @apply xl:h-[604.8px] xl:w-[620px] relative p-3;
 }
 .banner-slide .slide-1 .slide1-item-2 .img{
-  @apply w-[540px] h-[605px] ms-auto overflow-hidden border rounded-40;
+  @apply xl:w-[540px] xl:h-[605px] ms-auto overflow-hidden border rounded-40;
 }
 .banner-slide .slide-1 .slide1-item-2 .img .img-item{
   @apply h-full w-full hover:scale-125 hover:-rotate-6 duration-300;
 }
 .banner-slide .slide-1 .slide1-item-2 .review {
-  @apply 375:absolute 768:absolute 375:left-10 768:left-0 max-375:top-0 768:bottom-3 xl:bottom-36 bg-white rounded-15 p-5 h-[143.79px] min-375:w-[275px] w-[275px];
+  @apply absolute top-0 768:top-auto xl:bottom-36 bg-white rounded-15 p-5 h-[143.79px] min-375:w-[275px] w-[275px];
 }
 .shop-btn-2 {
   @apply bg-blue-500 w-auto text-white px-3 py-[11.74px] flex justify-center items-center gap-2 text-17.68 font-bold font-Plus my-4 rounded-[22px] hover:bg-transparent hover:border border-white;
@@ -470,6 +470,12 @@ h1 {
 .about .img{
   @apply xl:w-[450px] xxl:w-[682px]
 }
+.about-img-text{
+  @apply absolute bottom-0 right-0 h-[242px] w-[243px] bg-sky-300 text-center opacity-80 rounded-40 pt-16 hidden delay-300;
+}
+.about-img:hover .about-img-text{
+  @apply block ;
+}
 .blue-text{
   @apply text-18 font-Plus font-semibold text-blue-500;
 }
@@ -477,10 +483,10 @@ h1 {
   @apply font-roboto text-[#696969];
 }
 
+
 .Testimonials{
   @apply xxl:container m-auto xxl:mb-56 p-4 xl:px-16;
 }
-
 .Testimonials-swiper .swiper-slide{
   @apply rounded-40 border-3 border-blue-500 p-5 relative bg-white;
 }
