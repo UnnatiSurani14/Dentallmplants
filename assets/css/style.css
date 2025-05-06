@@ -102,8 +102,14 @@
 .btn {
   @apply flex items-center bg-blue-500 py-13 text-white px-8 rounded-20 gap-2 font-bold font-Plus text-16;
 }
-.btn:hover,.popup-btn:hover,.bt:hover{
-  @apply rounded-full bg-radial from-blue-500 from-40% to-blue-100 shadow-md shadow-gray;
+.btn:hover,.popup-btn:hover{
+  @apply bg-white border border-blue-500 text-blue-500 shadow-gray;
+}
+.browser-btn .btn svg,.about .btn svg ,.track-btn svg{
+  @apply fill-white
+}
+.btn:hover svg ,.track-btn:hover svg{
+  @apply fill-blue-500;
 }
 .h1{
   @apply flex flex-wrap items-center gap-2 text-40 xl:text-54 font-bold relative;
@@ -254,11 +260,17 @@ h1 {
 .banner-slide .slide-1 .slide1-item-2 {
   @apply xl:h-[604.8px] xl:w-[620px] relative p-3;
 }
+.banner-slide .slide-1 .slide1-item-2 .img{
+  @apply w-[540px] h-[605px] ms-auto overflow-hidden border rounded-40;
+}
+.banner-slide .slide-1 .slide1-item-2 .img .img-item{
+  @apply h-full w-full hover:scale-125 hover:-rotate-6 duration-300;
+}
 .banner-slide .slide-1 .slide1-item-2 .review {
   @apply 375:absolute 768:absolute 375:left-10 768:left-0 max-375:top-0 768:bottom-3 xl:bottom-36 bg-white rounded-15 p-5 h-[143.79px] min-375:w-[275px] w-[275px];
 }
 .shop-btn-2 {
-  @apply bg-blue-500 w-auto text-white px-3 py-[11.74px] flex justify-center items-center gap-2 text-17.68 font-bold font-Plus my-4 rounded-[22px] hover:bg-blue-100;
+  @apply bg-blue-500 w-auto text-white px-3 py-[11.74px] flex justify-center items-center gap-2 text-17.68 font-bold font-Plus my-4 rounded-[22px] hover:bg-transparent hover:border border-white;
 }
 .banner-slide .slide-2 {
   @apply bg-[#050607] flex flex-col items-center text-white relative overflow-hidden;
@@ -308,6 +320,13 @@ h1 {
 .track .icon {
   @apply bg-blue-500 h-[70px] w-[70px] rounded-15 flex justify-center items-center mx-3;
 }
+.track-btn{
+  @apply bg-blue-500 text-white rounded-20 flex justify-center items-center gap-2 py-12 px-20 font-Plus font-bold;
+}
+.track-btn:hover{
+  @apply bg-white text-blue-500  border border-blue-500;
+}
+
 
 .shop-by-system{
   @apply xxl:container m-auto mt-70 xl:mt-40 xl:p-20;
@@ -403,7 +422,14 @@ h1 {
  @apply bg-blue-800 rounded-20 text-white p-1 font-roboto font-semibold px-10;
 }
 .program-btn{
-  @apply absolute -top-5 right-5 bg-blue-800 rounded-20 text-white p-1 font-roboto font-semibold px-10; 
+  @apply  bg-blue-800 rounded-20 text-white p-1 font-roboto font-semibold px-10; 
+}
+.program .bt{
+  @apply  flex justify-center bg-blue-500 rounded-20 mt-3 hover:bg-white;
+}
+
+.bt:hover .btn{
+  @apply border-none
 }
 
 .serves{
@@ -481,13 +507,22 @@ h1 {
   @apply text-gray-100 font-roboto text-18;
 }
 .subscrine-btn{
-  @apply  bg-white rounded-20 text-blue-500 font-Plus font-bold w-full 425:w-[300px] sm:w-[176px] h-[50px] hover:ring-4 ring-blue-700 hover:shadow-md shadow-black;
+  @apply  bg-white rounded-20 text-blue-500 font-Plus font-bold w-full 425:w-[300px] sm:w-[176px] h-[50px];
+}
+.subscrine-btn:hover,.chat-btn:hover{
+  @apply bg-transparent border border-white text-white;
 }
 .contacts .contacts-item1{
   @apply xxl:w-[489px] bg-blue-700 flex flex-col items-center p-5 rounded-md;
 }
 .chat-btn{
-  @apply bg-white text-blue-500  py-11 px-6 font-Plus font-bold text-18 flex items-center gap-2 rounded-20 my-3 hover:ring-4 ring-blue-500 hover:shadow-md shadow-black;
+  @apply bg-white text-blue-500  py-11 px-6 font-Plus font-bold text-18 flex items-center gap-2 rounded-20 my-3;
+}
+.chat-btn svg{
+  @apply stroke-[#5E5EEE]
+}
+.chat-btn:hover svg{
+  @apply stroke-white;
 }
 
 .footer {

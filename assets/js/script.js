@@ -49,10 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
   new Swiper(".banner-slide", {
     loop: true,
     slidesPerView: 1,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
